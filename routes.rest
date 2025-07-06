@@ -1,0 +1,16 @@
+// RENDER
+
+GET https://cse341-project1-jpoj.onrender.com
+###
+GET https://cse341-project1-jpoj.onrender.com/users
+###
+GET https://cse341-project1-jpoj.onrender.com/users/6869907b0bf1400bce213383
+
+// LOCAL
+
+###
+GET http://localhost:3000/
+###
+GET http://localhost:3000/users
+###
+GET http://localhost:3000/users/6869907b0bf1400bce213383
