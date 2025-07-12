@@ -5,7 +5,7 @@
     "description": "API for managing contacts",
     "version": "1.0.0"
   },
-  "host": "https://cse341-project1-jpoj.onrender.com",
+  "host": "cse341-project1-jpoj.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -20,16 +20,6 @@
         "responses": {
           "200": {
             "description": "OK"
-          }
-        }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
           }
         }
       }
