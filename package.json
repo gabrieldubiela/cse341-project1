@@ -17,8 +17,13 @@
   "homepage": "https://github.com/gabrieldubiela/cse341-project1#readme",
   "description": "",
   "dependencies": {
+    "autogen": "^0.0.1",
+    "body-parser": "^2.2.0",
     "dotenv": "^17.0.1",
     "express": "^5.1.0",
-    "mongodb": "^6.17.0"
+    "mongodb": "^6.17.0",
+    "swagger": "^0.7.5",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
   }
 }

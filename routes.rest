@@ -1,16 +1,85 @@
 // RENDER
 
+// Get home page
 GET https://cse341-project1-jpoj.onrender.com
+
 ###
-GET https://cse341-project1-jpoj.onrender.com/users
+// Get all contacts
+GET https://cse341-project1-jpoj.onrender.com/contacts
+
 ###
-GET https://cse341-project1-jpoj.onrender.com/users/6869907b0bf1400bce213383
+// Get a single contact by ID
+GET https://cse341-project1-jpoj.onrender.com/contacts/6871ba149c794eda92e82bb5
+
+###
+// Create a new contact
+POST https://cse341-project1-jpoj.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+{
+    "firstName": "Felipe",
+    "lastName": "Pereira",
+    "email": "felipe.pereira@email.com",
+    "favoriteColor": "Black",
+    "birthday": "1990-05-25"
+}
+
+###
+// Update an existing contact by ID
+PUT https://cse341-project1-jpoj.onrender.com/contacts/6871ba149c794eda92e82bb5 HTTP/1.1
+Content-Type: application/json
+{
+    "firstName": "Felipe",
+    "lastName": "Pereira",
+    "email": "felipe.pereira@email.com",
+    "favoriteColor": "Orange",
+    "birthday": "1990-05-25"
+}
+
+###
+// Delete a contact by ID
+DELETE https://cse341-project1-jpoj.onrender.com/contacts/6871ba149c794eda92e82bb5 HTTP/1.1
+
 
 // LOCAL
 
 ###
+// Get home page
 GET http://localhost:3000/
+
 ###
-GET http://localhost:3000/users
+// Get all contacts
+GET http://localhost:3000/contacts
+
 ###
-GET http://localhost:3000/users/6869907b0bf1400bce213383
+// Get a single contact by ID
+GET http://localhost:3000/contacts/6871ba149c794eda92e82bb5
+
+###
+// Create a new contact
+POST http://localhost:3000/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Felipe",
+    "lastName": "Pereira",
+    "email": "felipe.pereira@email.com",
+    "favoriteColor": "Black",
+    "birthday": "1990-05-25"
+}
+
+###
+// Update an existing contact by ID
+PUT http://localhost:3000/contacts/6871c882abdc956d126d8a0e HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Felipe",
+    "lastName": "Pereira",
+    "email": "felipe.pereira@email.com",
+    "favoriteColor": "Orange",
+    "birthday": "1990-05-25"
+}
+
+###
+// Delete a contact by ID
+DELETE http://localhost:3000/contacts/6871c882abdc956d126d8a0e HTTP/1.1
